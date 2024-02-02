@@ -12,13 +12,13 @@ var game = {
 	
 	creeps: [],
 	hp: 1,
-	hpinc: 1.3,
-	lives: 100,
+	hpinc: 1.13,
+	lives: 1000,
 	
 	turrets: [],
 	spent: 0,
 	kills: 0,
-	cash: 350,
+	cash: 35000000,
 	selection: false,
 	
 	tiles: {},
@@ -44,7 +44,7 @@ var game = {
 		if (game._wave + 1200 === game.ticks) {
 			ui.wave.textContent = ++game.wave;
 			
-			game.hpinc = { 10: 1.2, 25: 1.1, 50: 1.06, 100: 1.04, 150: 1.02, 200: 1.01 }[game.wave] || game.hpinc;
+			game.hpinc = { 10: 1.02, 25: 1.1, 50: 1.06, 100: 1.04, 150: 1.02, 200: 1.01 }[game.wave] || game.hpinc;
 			game.hp *= game.hpinc;
 			
 			for (var i = 1; i <= 10; i++) {
