@@ -13,12 +13,12 @@ var game = {
 	creeps: [],
 	hp: 1,
 	hpinc: 1.3,
-	lives: 10,
+	lives: 100,
 	
 	turrets: [],
 	spent: 0,
 	kills: 0,
-	cash: 35,
+	cash: 350,
 	selection: false,
 	
 	tiles: {},
